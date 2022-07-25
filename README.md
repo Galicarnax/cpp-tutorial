@@ -812,7 +812,7 @@ needed any more. Returning pointer to static data is also Ok.
 > behavior.
 
 It is common for `C/C++` beginners to confuse pointers with dynamic
-objects. Note that with this expression:
+objects. Note that with this statement:
 ```cpp
  int *p = new int(10);
 ```

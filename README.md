@@ -1026,7 +1026,7 @@ another without using a loop, but you can do that with `std::array`).
 Still, understanding of how arrays work is an advantage, at least
 because you may find yourself tinkering some day with `C` code. E.g.,
 I would suggest to look into this SO post about how two-dimensional
-arrays (such as `int[5][3]`) are different from nested pointers
+arrays (such as `int[5][3]`) are different from chained pointers
 (`int**`): https://stackoverflow.com/a/7307699/5707690 .
 
 

@@ -1851,7 +1851,7 @@ You may think that this:
  int x;
 ```
 is a declaration, similar to the function `int foo();` above. In fact,
-it is a definition. When the compiler sees such expression, it will
+it is a definition. When the compiler sees such statement, it will
 *allocate memory* for that object. Moreover, if in global scope, it
 *will initialize* the object with the default value of 0. In other
 words, in global scope the above statement is equivalent to:

@@ -67,7 +67,7 @@ much faster then compiling).
 
 - *Preprocessor directives* are commands for the preprocessor for
   including one file into another (`#include`), making choices
-  (`#ifdef`, `#ifndef`, etc.), defining "variables" (`#define`), etc.
+  (`#ifdef`, `#ifndef`, etc.), defining "variables" and "functions" (`#define`), etc.
   In fact, it is an individual programming language by itself,
   used specifically to manipulate the source code before passing it to `C/C++`
   compiler. You will also see the word *macro*, but it is not a
@@ -630,7 +630,7 @@ Also note that when comparing pointers, you compare addresses, not values:
  assert( *px == *py ); // true: the values of x and y are equal (10 == 10)
  assert( px == py );   // false: addresses of x and y are different
 ```
-> **Note**: `assert` is a useful debugging function (in fact, a
+> **Note**: `assert` is a useful debugging "function" (in fact, it is a
 > preprocessor macro). If condition passed to `assert` is `false`, the
 > program aborts, indicating the failed condition. When you compile
 > your code with `g++ -DNDEBUG`, all `assert`s will be

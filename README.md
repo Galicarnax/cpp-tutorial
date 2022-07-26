@@ -69,7 +69,7 @@ much faster then compiling).
   including one file into another (`#include`), making choices
   (`#ifdef`, `#ifndef`, etc.), defining "variables" (`#define`), etc.
   In fact, it is an individual programming language by itself,
-  which is used to manipulate code before passing it to the `C/C++`
+  used specifically to manipulate the source code before passing it to `C/C++`
   compiler. You will also see the word *macro*, but it is not a
   synonym for directive; it is only one type of directive: `#define`.
   Macros might be defined as parameters to `g++` from the command line

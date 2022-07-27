@@ -697,9 +697,9 @@ As you may know, if you use an object `x` which is an instance of some
 `class` or `struct`, then to get access to its members (say, `y`) you
 use the dot operator, like in `x.y`. But when you access your object
 `x` via a pointer (say, `p`, which points to `x`), then you cannot
-write `*x.y` - that would mean you dereference `y`, not `x`. So you
-have to put the dereferenced `x` in parenthesis: `(*x).y`. There is an
-alternative syntax for this, which means absolutely the same: `x->y`.
+write `*p.y` - that would mean you dereference `y`, not `p`. So you
+have to put the dereferenced `p` in parenthesis: `(*p).y`. There is an
+alternative syntax for this, which means absolutely the same: `p->y`.
 This arrow operator might come *only after* a pointer to `struct`/`class`.
 
 It might happen that a `struct` member is itself a pointer. Here's how

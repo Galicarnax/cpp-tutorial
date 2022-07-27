@@ -807,7 +807,7 @@ needed any more. Returning pointer to static data is also Ok.
 > **Note**: The `delete` operator accepts a pointer, and frees the memory
 > occupied by the object to which the pointer points (note, btw, it
 > will not set the pointer to `nullptr` automatically). The pointer
-> passed to delete must point to a dynamic object; if you pass a
+> passed to `delete` must point to a dynamic object; if you pass a
 > pointer to static or stack object, you will end up with an undefined
 > behavior.
 

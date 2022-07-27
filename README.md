@@ -1474,8 +1474,8 @@ but to use pass-by-reference for it in function definition.
 > different functions should look differently". In this respect
 > `C/C++` fails miserably. Thus, `*` in front of a pointer means
 > dereferencing. Unless there is also a type name in front, in which case
-> it means pointer declaration. `&` in front of a variable means the
-> address of that variable. Unless there is also a type name in front,
+> it means pointer declaration. `&` in front of an object's name means the
+> address of that object. Unless there is also a type name in front,
 > in which case it means reference declaration. On top of that, the
 > term "dereferencing", which comes from `C`, is applicable to
 > pointers, not references (references need no dereferencing). You

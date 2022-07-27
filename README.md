@@ -2204,15 +2204,15 @@ linked automatically.
 
 There are two types of libraries: static (also known as 'archives',
 hence the `*.a` extension) and shared ('shared object', `*.so`). The
-distinction is that the binary code which you use from static
+distinction is that the binary code which your program uses from static
 libraries is copied by the linker at compile-time and becomes part of
 your final executable. Binary code from shared libraries is not copied
 into your program, but is loaded when your program starts. With static
-libraries it is easier to distribute applications (you don't have to
-worry about mismatch of versions), but executables have bigger sizes.
+libraries it is easier to distribute applications (user don't have to
+worry if they have the library), but executables have bigger sizes.
 With shared libraries the sizes are smaller, because there is only one
-copy of the library on your computer (many different executables may
-load it at run-time, even simultaneously), but you need to check if you have the library on your computer, and that its version is the one needed by an application. If you
+copy of the library on a computer (many different executables may
+load it at run-time, even simultaneously), but users need to check if they have the library on their computers, and that its version is the one needed by an application. If you
 have both versions of the same library when compiling a program, by
 default, the shared version will be linked (to force linking static
 version, use `-static` flag).

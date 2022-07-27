@@ -2165,7 +2165,7 @@ definitions, you should understand how libraries work in `C/C++`. Say,
 you need to make numeric integration, and decide to use GSL (GNU
 Scientific Library). First, you install this library, which means that
 your package manager (such as `apt` in `Ubuntu`) will download 1)
-header files of the library which contains type definitions and
+header files of the library which contain type definitions and
 function declarations, and 2) the compiled definitions of those
 functions in the form of the library `libgsl.a` (the convention is
 that file names of libraries always have "lib"-prefix). Headers and

@@ -2212,8 +2212,7 @@ libraries it is easier to distribute applications (you don't have to
 worry about mismatch of versions), but executables have bigger sizes.
 With shared libraries the sizes are smaller, because there is only one
 copy of the library on your computer (many different executables may
-load it at run-time, even simultaneously), but you need to check if
-the version of the library is the one needed by an application. If you
+load it at run-time, even simultaneously), but you need to check if you have the library on your computer, and that its version is the one needed by an application. If you
 have both versions of the same library when compiling you program, by
 default, the shared version will be linked (to force linking static
 version, use `-static` flag).

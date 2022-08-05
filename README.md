@@ -683,7 +683,7 @@ When you have chained pointers, to get the value of the final object
 you have to apply as many stars as used in the declaration of the
 pointer:
 ```cpp
- int a = 10;
+ int x = 10;
  int *p = &x;
  int **pp = &p;
  cout << pp << endl;   // value of pp, i.e., the address of p
@@ -2208,7 +2208,7 @@ distinction is that the binary code which your program uses from static
 libraries is copied by the linker at compile-time and becomes part of
 your final executable. Binary code from shared libraries is not copied
 into your program, but is loaded when your program starts. With static
-libraries it is easier to distribute applications (user don't have to
+libraries it is easier to distribute applications (users don't have to
 worry if they have the library), but executables have bigger sizes.
 With shared libraries the sizes are smaller, because there is only one
 copy of the library on a computer (many different executables may

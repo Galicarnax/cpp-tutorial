@@ -1035,7 +1035,7 @@ arrays (such as `int[5][3]`) are different from chained pointers
 Although functions also have addresses in the code segment (you can
 apply the `&` operator to functions), they are not objects, because
 they do not live in *data*, *stack* or *heap* segment, and they do not
-contain a *value* (although they can *return* a value, they *contain*
+contain a *value* (they can *return* a value, but they *contain*
 statements). You cannot apply the `sizeof` operator to them.
 
 > ☢️ Contrast this with `Python`, where *everything is an object*,
@@ -1552,7 +1552,7 @@ From here you can see that
       cout << ++x << endl; // prints 11
 
 - A function call is always an expression, since functions always
-  return something (even if `void`).
+  return something (even if `void`; but this is a rare case for which the primitive test with `cout` will fail).
 
 So, expressions might or might not *do something* (i.e., they might
 have side-effects), but *they are always evaluated to a value*.

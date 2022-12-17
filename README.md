@@ -1729,7 +1729,7 @@ One final example:
 ```
 `getXsimple()` returns a temporary object with the value `10`, i.e. an
 rvalue. `getXref()` returns a reference to the global object `x`,
-i.e., an lvalue, so it can be assigned to directly.
+i.e., an lvalue, so it can be used on the left side of the assignment.
 
 
 # Declaration vs Definition 
@@ -1761,7 +1761,7 @@ Suppose you have two source files in your project, say,
 
  int foo(double x)
  {
- // do something and return and int...
+ // do something and return an int...
  // This function is used in other functions in the same source file
  }
 ```

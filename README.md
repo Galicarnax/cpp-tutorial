@@ -61,7 +61,7 @@ Source files are compiled separately into object files, and this is
 good for large projects: if you make corrections in only one source
 file, you need to re-compile only this one file, not all of them
 (linker will still need all object files to re-link, but linking is
-much faster then compiling).
+much faster than compiling).
 
 **Notes**:
 
